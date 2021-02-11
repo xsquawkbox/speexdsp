@@ -458,7 +458,7 @@ EXPORT void jitter_buffer_put(JitterBuffer *jitter, const JitterBufferPacket *pa
       // if we don't insert it, and we're responsible for calling
       // a destroy callback, we must destroy it
       if (jitter->destroy)
-	 jitter->detroy(packet->data);
+	 jitter->destroy(packet->data);
    }
 }
 
